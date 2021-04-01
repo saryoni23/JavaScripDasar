@@ -7,3 +7,6 @@
 7. Escape Sequence
 8. Variable menngunakan ("Var")
 9. Variable menggabungkan ("let & const")
+10. Operatur Matematika (+ ,- ,* ,/ )
+11. Operator Unary
+12. Operator Perbandingan
