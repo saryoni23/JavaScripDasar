@@ -7,7 +7,22 @@
     <title>Variable</title>
 </head>
 <body>
+    <h2>9. Variable menngunakan ("Let dan Const")</h2>
+
     <script>
+    function gabungNama() {
+        let namaDepan   =document.getElementById("namaDepan").value;
+        let namaTengah  =document.getElementById("namaTengah").value;
+        let namaBelakang=document.getElementById("namaBelakang").value;
+        document.getElementById("fullName").value= namaDepan+ " " +namaTengah+ " " +namaBelakang;
+    }
+    function clearNama() {
+        document.getElementById("namaDepan").value="";
+        document.getElementById("namaTengah").value="";
+        document.getElementById("namaBelakang").value="";
+        document.getElementById("fullName").value=""
+    }
+
         // Variable dengan mendeklarasikan variale terlebih dahulu
         // let bisa di rubah variable yang sudah di deklarasikan
         let namaLengkap;
@@ -15,22 +30,22 @@
         let namaBelakanng;
         let namaTengah;
 
-        namaLengkap     =   "Indra Saryoni Simanjuntak";
         namaTengah      =   "Saryoni";
         namaDepan       =   "Indra";
-        namaBelakanng   =   "Simanjuntak";
-
+        namaBelakang   =   "Simanjuntak";
         // Variable langsung dengan value
-        let namaSaya    =   "Indra Saryoni " + "Simanjuntak" ;
+        namaLengkap     =   namaDepan + namaTengah + namaBelakang;
+
+        
 
         // mencetak variable
-        document.writeln(namaSaya);
-        document.writeln("</br>");
-        document.writeln(namaLengkap);
+        document.writeln(namaDepan);
         document.writeln("</br>");
         document.writeln(namaTengah);
         document.writeln("</br>");
-        document.writeln(namaBelakanng);
+        document.writeln(namaBelakang);
+        document.writeln("</br>");
+        document.writeln(namaLengkap);
         document.writeln("</br>");
 
         // const adalah variable yang constan dan tidak dapat di rubah
@@ -38,5 +53,24 @@
 
         document.writeln(applikasi);
     </script>
+<table border="1">
+        <tr>
+            <td>Masukkan nama Depan </td>
+            <td><input type="text" id="namaDepan"></td>
+        </tr>
+        <tr>
+            <td>Masukkan nama Tengah </td>
+            <td><input type="text" id="namaTengah"></td>
+        </tr>
+        <tr>
+            <td>Masukkan nama Belakang </td>
+            <td><input type="text" id="namaBelakang"></td>
+        </tr>
+        <tr><td>Nama Lengkap</td><td><input type="text" id="fullName" size="30" />
+</table>
+<hr>
+<button onclick="gabungNama()"> Gabung </button>
+<button onclick="clearNama()"> Clear</button>
+
 </body>
 </html>

@@ -7,34 +7,62 @@
     <title>Operator Aritmatika</title>
 </head>
 <body>
+    <h2>10. Operatur Matematika ( + , - , * , / , %, ** )</h2>
     <script>
-        let result = 1 + 2 ; //tambah
-        document.writeln("<p>1 + 2 = "+ result + "</p>")
-        let originalResult = result; //3
-
-        result -= 1; //kurang
-        document.writeln("<p>" + originalResult + " - 1 = " +result + "</p>")
-        originalResult = result; //2
-
-        result *= 2; //kali
-        document.writeln("<p>"+ originalResult + " * 2 = " + result + "</p>")
-        originalResult = result; //4
-
-        result /= 2; //bagi
-        document.writeln("<p>" + originalResult + " / 2 = " + result + "</p>")
-        originalResult = result; //2
-        
-        result %= 20; //sisa bagi
-        document.writeln("<p>" + originalResult + " % 20 = " + result + "</p>")
-        originalResult = result; //2
-
-        result **= 4; //exponensial
-        document.writeln("<p>" + originalResult + " ** 4  = " + result + "</p>")
-        originalResult = result; //16
-
-
-        
-
+    function tambah() {
+        let angka1  =parseFloat(document.getElementById("angka1").value);
+        let angka2  =parseFloat(document.getElementById("angka2").value);
+        document.getElementById("hasil").value= angka1 + angka2;
+    }
+    function kurang() {
+        let angka1  =parseFloat(document.getElementById("angka1").value);
+        let angka2  =parseFloat(document.getElementById("angka2").value);
+        document.getElementById("hasil").value= angka1 - angka2;
+    }
+    function kali() {
+        let angka1  =parseFloat(document.getElementById("angka1").value);
+        let angka2  =parseFloat(document.getElementById("angka2").value);
+        document.getElementById("hasil").value= angka1 * angka2;
+    }
+    function bagi() {
+        let angka1  =parseFloat(document.getElementById("angka1").value);
+        let angka2  =parseFloat(document.getElementById("angka2").value);
+        document.getElementById("hasil").value= angka1 / angka2;
+    }
+    function sisaBagi() {
+        let angka1  =parseFloat(document.getElementById("angka1").value);
+        let angka2  =parseFloat(document.getElementById("angka2").value);
+        document.getElementById("hasil").value= angka1 % angka2;
+    }
+    function exponensial() {
+        let angka1  =parseFloat(document.getElementById("angka1").value);
+        let angka2  =parseFloat(document.getElementById("angka2").value);
+        document.getElementById("hasil").value= angka1 ** angka2;
+    }
+    function clearKolom() {
+        document.getElementById("angka1").value="";
+        document.getElementById("angka2").value="";
+        document.getElementById("hasil").value="";
+    }
     </script>
+<table border="1">
+        <tr>
+            <td>Angka1 </td>
+            <td><input type="number" id="angka1"></td>
+        </tr>
+        <tr>
+            <td>Angka2 </td>
+            <td><input type="number" id="angka2"></td>
+        </tr>
+        <tr><td>Hasil</td><td><input type="number" id="hasil"  />
+</table>
+<hr>
+<button onclick="tambah()"> + </button>
+<button onclick="kurang()"> - </button>
+<button onclick="kali()"> * </button>
+<button onclick="bagi()"> / </button>
+<button onclick="sisaBagi()"> Sisa Bagi </button>
+<button onclick="exponensial()"> Exponensial </button>
+<button onclick="clearKolom()"> C</button>
 </body>
 </html>

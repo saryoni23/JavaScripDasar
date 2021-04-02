@@ -10,19 +10,17 @@
 <body>
     <h1>11.  Operator Unary</h1>
     <script>
-        let result = +1; 
-        document.writeln("<p>" + result + "</p>");
+        let result = parseFloat(prompt("Inputkan nilai: "));
+        document.writeln("<p>" + result + " </p>");
 
         result--;
-        document.writeln("<p>" + result + "</p>");
+        document.writeln("<p>" + result + " (Mengurangi Nilai sebesar 1 di atas menggunakan --)</p>");
 
         result++;
-        document.writeln("<p>" + result + "</p>");
+        document.writeln("<p>" + result + " (Menambahkan Nilai sebesar 1 menggunakan ++) </p>");
 
         result = -result;
-        document.writeln("<p>" + result + "</p>");
-
-
+        document.writeln("<p>" + result + " (Membuat nilai di atas menjadi bernilai negatif) </p>");
     </script>
 </body>
 </html>

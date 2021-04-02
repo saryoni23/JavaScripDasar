@@ -10,3 +10,4 @@
 10. Operatur Matematika (+ ,- ,* ,/ )
 11. Operator Unary
 12. Operator Perbandingan
+13. Operator Logika
