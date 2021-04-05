@@ -14,24 +14,23 @@
         let angka2  =parseFloat(document.getElementById("angka2").value);
         let lulus1  = angka1 >= 75;
         let lulus2  = angka2 >= 75;
-        document.getElementById("hasil").value= lulus1 && lulus2;
+        document.getElementById("hasil1").value= lulus1 && lulus2;
     }
     function hasilAtau() {
         let angka1  =parseFloat(document.getElementById("angka1").value);
         let angka2  =parseFloat(document.getElementById("angka2").value);
         let lulus1  = angka1 >= 75;
         let lulus2  = angka2 >= 75;
-        document.getElementById("hasil").value= lulus1 || lulus2;
+        document.getElementById("hasil1").value= lulus1 || lulus2;
     }
     function hasilKebalikan() {
-        let hasil  =document.getElementById("hasil").value;
-        document.getElementById("hasil").value= !`hasil`;
+        let hasil  =document.getElementById("hasil1").value;
+        document.getElementById(`hasil1`).value= !hasil;
     }
       function clearKolom() {
         document.getElementById("angka1").value="";
         document.getElementById("angka2").value="";
-        document.getElementById("hasil").value="";
-        document.getElementById("hasil").value="";
+        document.getElementById("hasil1").value="";
     }
 </script>
 
@@ -44,13 +43,12 @@
             <td>Nilai Absensi </td>
             <td><input type="text" id="angka2">Lulus 75</td>
         </tr>
-        <tr><td>Hasil</td><td><input type="text" id="hasil"  />
-            
+        <tr><td>Hasil</td><td><input type="text" id="hasil1"/>     
 </table>
 <hr>
 <button onclick="hasilDan()"> && </button>
 <button onclick="hasilAtau()"> || </button>
-<button onclick="clearKolom()"> C</button>
 <button onclick="hasilKebalikan()"> ! </button>
+<button onclick="clearKolom()"> C</button>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Template</title>
+</head>
+<body>
+    <h2>15. String Template</h2>
+    <script>
+        const name  = prompt("Inputkan Nama: ");
+        const age   = parseFloat(prompt("Inputkan umur: "));
+        const address  = prompt("Inputkan alamat: ");
+        const bio = `Name :${name}, Umur :${age}, Alamat : ${address}`;
+        
+        
+        const multiline= `Nama Saya Indra,
+Ini contoh belajar javascript,
+dan ini hanya dasar - dasar saja,
+saya mau belajar apa saja yang penting bisa di pelajari`;
+        
+        document.writeln(bio);
+        console.info(bio);
+
+        document.writeln("<pre>");
+        document.writeln(multiline);
+        document.writeln("</pre>");
+            
+    </script>
+</body>
+</html>
