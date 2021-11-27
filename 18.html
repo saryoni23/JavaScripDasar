@@ -8,7 +8,30 @@
 </head>
 <body>
     <script>
+        const dataKosong = {
+            "nama" : "indra saryoni",
+            alamat : "indonesia",
+            umur   : 24
+        };
+
+
+
         
+        // menambah atau megubah
+        // dataKosong["nama"] = "indra saryoni";
+        // dataKosong["alamat"] = "indonesia";
+        // dataKosong["umur"] = "24";
+
+
+        console.info(`nama : ${dataKosong.nama}`);
+        console.info(`alamat : ${dataKosong.alamat}`);
+        console.info(`unur : ${dataKosong.umur}`);
+        console.table(dataKosong);
+        
+        delete dataKosong["umur"];
+        console.table(dataKosong);
+
+
     </script>
 </body>
 </html>
