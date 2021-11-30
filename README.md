@@ -17,3 +17,6 @@
 17. Tipe data Array
 18. Tipe data Objek
 19. if expression
+20. POPUP
+21. POPUP Prompt
+22. POPUP Confirm
