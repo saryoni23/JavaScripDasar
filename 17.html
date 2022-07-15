@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>17. Tipe data Array</title>
 </head>
+
 <body>
     <script>
         let arrayKosong = [];
 
-        let arraynama   = ["indra", "saryoni" , "simanjuntak"];
+        let arraynama = ["indra", "saryoni", "simanjuntak"];
 
         arraynama.push("tobuk");
         arraynama.push("datu dolok");
 
 
         console.table(arraynama);
-        
+
         console.info(arraynama[3]);
-        
-        
-        arraynama[3]="nomor15";
-        
+
+
+        arraynama[3] = "nomor15";
+
         console.table(arraynama);
-        
-        arraynama[3]="tobuk";
+
+        arraynama[3] = "tobuk";
         console.table(arraynama);
-        
+
         delete arraynama[3];
         console.table(arraynama);
-        arraynama[3]="tobuk";
+        arraynama[3] = "tobuk";
 
-        arraynama.push(1,2,3,4,5,6);
+        arraynama.push(1, 2, 3, 4, 5, 6);
 
         console.table(arraynama);
-
     </script>
+    <br>
+    <a href="index.html">Kembali</a>
 </body>
+
 </html>

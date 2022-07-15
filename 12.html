@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,78 +8,87 @@
     <link rel="stylesheet" href="main/style.css">
     <title>Operator Perbandingan</title>
 </head>
+
 <body>
-<h1>12. Operator Perbandingan</h1>
+    <h1>12. Operator Perbandingan</h1>
     <script>
-        let result  = 5 === "5"; // Perbangingan Sama dengan dan Sama Tipe
+        let result = 5 === "5"; // Perbangingan Sama dengan dan Sama Tipe
         document.writeln("<p> 5 === \"5\" " + result + " (Perbangingan Sama dengan dan Sama Tipe)</p>");
 
         result = 5 == "5"; // Perbandingan Sama dengan (tidak memperhatikan tipe data)
         document.writeln("<p> 5 == \"5\" " + result + " (Perbandingan Sama dengan (tidak memperhatikan tipe data))");
-        
-        result = 5 <= 4 ;   //  Perbandingan Kurang dari atau sama dengan
+
+        result = 5 <= 4; //  Perbandingan Kurang dari atau sama dengan
         document.writeln("<p> 5 <= 4 " + result + " (Perbandingan Kurang dari atau sama dengan)");
-        
-        result = 5 >= 4 ;   //  Perbandingan Lebih dari atau sama dengan
+
+        result = 5 >= 4; //  Perbandingan Lebih dari atau sama dengan
         document.writeln("<p> 5 >= 4 " + result + " (Perbandingan Lebih dari atau sama dengan)");
-        
-        result = 5 != 5 ;   //  Perbandingan Tidak sama dengan
+
+        result = 5 != 5; //  Perbandingan Tidak sama dengan
         document.writeln("<p> 5 != 5 " + result + " (Perbandingan Tidak sama dengan)");
 
-        result = 5 !== "5" ;   //  Perbandingan Tidak sama dengan atau Tidak sama tipe
+        result = 5 !== "5"; //  Perbandingan Tidak sama dengan atau Tidak sama tipe
         document.writeln("<p> 5 !== 5 " + result + " (Perbandingan Tidak sama dengan atau Tidak sama tipe)");
 
-        result   = 1 > 2;   //  Perbandingan lebih dari
+        result = 1 > 2; //  Perbandingan lebih dari
         document.writeln("<p> 1 > 2 = " + result + " (Perbandingan lebih dari) </p>");
 
-        result  = 1 < 2;    //  Perbandingan Kurang dari
+        result = 1 < 2; //  Perbandingan Kurang dari
         document.writeln("<p> 1 < 2 = " + result + " (Perbandingan Kurang dari)</p>");
 
-    function samaJenisTipeData() {
-        let angka1  =parseFloat(document.getElementById("angka1").value);
-        let angka2  =parseFloat(document.getElementById("angka2").value);
-        document.getElementById("hasil").value= angka1 === angka2;
-    }
-    function samaData() {
-        let angka1  =parseFloat(document.getElementById("angka1").value);
-        let angka2  =parseFloat(document.getElementById("angka2").value);
-        document.getElementById("hasil").value= angka1 == angka2;
-    }
-    function kurangDariSama() {
-        let angka1  =parseFloat(document.getElementById("angka1").value);
-        let angka2  =parseFloat(document.getElementById("angka2").value);
-        document.getElementById("hasil").value= angka1 <= angka2;
-    }
-    function lebihDarisama() {
-        let angka1  =parseFloat(document.getElementById("angka1").value);
-        let angka2  =parseFloat(document.getElementById("angka2").value);
-        document.getElementById("hasil").value= angka1 >= angka2;
-    }
-    function tidakSama() {
-        let angka1  =parseFloat(document.getElementById("angka1").value);
-        let angka2  =parseFloat(document.getElementById("angka2").value);
-        document.getElementById("hasil").value= angka1 != angka2;
-    }
-    function tidakSamaTipeData() {
-        let angka1  =parseFloat(document.getElementById("angka1").value);
-        let angka2  =parseFloat(document.getElementById("angka2").value);
-        document.getElementById("hasil").value= angka1 !== angka2;
-    }
-    function lebihDari() {
-        let angka1  =parseFloat(document.getElementById("angka1").value);
-        let angka2  =parseFloat(document.getElementById("angka2").value);
-        document.getElementById("hasil").value= angka1 > angka2;
-    }
-    function kurangDari() {
-        let angka1  =parseFloat(document.getElementById("angka1").value);
-        let angka2  =parseFloat(document.getElementById("angka2").value);
-        document.getElementById("hasil").value= angka1 < angka2;
-    }
-    function clearKolom() {
-        document.getElementById("angka1").value="";
-        document.getElementById("angka2").value="";
-        document.getElementById("hasil").value="";
-    }
+        function samaJenisTipeData() {
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            document.getElementById("hasil").value = angka1 === angka2;
+        }
+
+        function samaData() {
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            document.getElementById("hasil").value = angka1 == angka2;
+        }
+
+        function kurangDariSama() {
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            document.getElementById("hasil").value = angka1 <= angka2;
+        }
+
+        function lebihDarisama() {
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            document.getElementById("hasil").value = angka1 >= angka2;
+        }
+
+        function tidakSama() {
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            document.getElementById("hasil").value = angka1 != angka2;
+        }
+
+        function tidakSamaTipeData() {
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            document.getElementById("hasil").value = angka1 !== angka2;
+        }
+
+        function lebihDari() {
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            document.getElementById("hasil").value = angka1 > angka2;
+        }
+
+        function kurangDari() {
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            document.getElementById("hasil").value = angka1 < angka2;
+        }
+
+        function clearKolom() {
+            document.getElementById("angka1").value = "";
+            document.getElementById("angka2").value = "";
+            document.getElementById("hasil").value = "";
+        }
     </script>
 
     <table border="1">
@@ -90,17 +100,24 @@
             <td>Angka2 </td>
             <td><input type="text" id="angka2"></td>
         </tr>
-        <tr><td>Hasil</td><td><input type="text" id="hasil"  />
-</table>
-<hr>
-<button onclick="samaJenisTipeData()"> === </button>
-<button onclick="samaData()"> == </button>
-<button onclick="kurangDariSama()"> <= </button>
-<button onclick="lebihDarisama()"> >= </button>
-<button onclick="tidakSama()"> != </button>
-<button onclick="tidakSamaTipeData()"> !== </button>
-<button onclick="lebihDari()"> < </button>
-<button onclick="kurangDari()"> > </button>
-<button onclick="clearKolom()"> C</button>
+        <tr>
+            <td>Hasil</td>
+            <td><input type="text" id="hasil" />
+    </table>
+    <hr>
+    <button onclick="samaJenisTipeData()"> === </button>
+    <button onclick="samaData()"> == </button>
+    <button onclick="kurangDariSama()">
+        <= </button> <button onclick="lebihDarisama()"> >=
+    </button>
+    <button onclick="tidakSama()"> != </button>
+    <button onclick="tidakSamaTipeData()"> !== </button>
+    <button onclick="lebihDari()">
+        < </button> <button onclick="kurangDari()"> >
+    </button>
+    <button onclick="clearKolom()"> C</button>
+    <br>
+    <a href="index.html">Kembali</a>
 </body>
+
 </html>
